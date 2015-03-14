@@ -1,0 +1,15 @@
+name: Utility
+main: farrael.fr.utility.Utility
+version: 1.0.0
+description: Utilitaire pour serveur minecraft (tab, motd, ...)
+commands:
+    utility:
+        description: Default plugin commands.
+permissions:
+    utility.*:
+        description: Gives access to all commands.
+        children:
+            utility.admin: true
+    utility.admin:
+        description: Allows you to edit plugin.
+        default: op
